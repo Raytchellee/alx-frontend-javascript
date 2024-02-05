@@ -1,13 +1,9 @@
-const taskBlock = (trueOrFalse) => {
-  var task = false;
-  var task2 = true;
+export default function getNeighborhoodsList() {
+  this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
 
-  if (trueOrFalse) {
-    var task = true;
-    var task2 = false;
-  }
-
-  return [task, task2];
+  const self = this;
+  this.addNeighborhood = (newNeighborhood) => {
+    self.sanFranciscoNeighborhoods.push(newNeighborhood);
+    return self.sanFranciscoNeighborhoods;
+  };
 }
-
-export default taskBlock;
