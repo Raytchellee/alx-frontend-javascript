@@ -1,4 +1,4 @@
-export default function updateStudentGradeByCity(students, city, newGrades) {
+function updateStudentGradeByCity(students, city, newGrades) {
   if (!Array.isArray(students) || !Array.isArray(newGrades)) {
     return [];
   }
@@ -9,3 +9,5 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
   });
   return filteredStudents;
 }
+
+export default updateStudentGradeByCity;
