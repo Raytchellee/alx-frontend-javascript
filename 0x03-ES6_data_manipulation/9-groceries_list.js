@@ -1,4 +1,4 @@
-export default const groceriesList = () => {
+const groceriesList = () => {
   const myMap = new Map();
   const food = {
     Apples: 10,
@@ -12,3 +12,5 @@ export default const groceriesList = () => {
   }
   return myMap;
 };
+
+export default groceriesList;
